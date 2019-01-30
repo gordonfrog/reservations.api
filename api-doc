@@ -1,0 +1,18 @@
+MongoDB SETUP:
+docker pull mongo:latest
+docker run -d -p 27017:27017 mongo:latest
+
+API:
+GET http://localhost:8080/reservation/2019-01-24
+POST http://localhost:8080/reservation/2019-01-25
+{
+	"email": "will@gordon-technologies.com",
+	"name": "will gordon",
+    "seats": 5
+}
+DELETE localhost:8080/reservation/2019-01-25
+{
+	"email": "will@gordon-technologies.com",
+	"name": "will gordon",
+    "seats": 5
+}
